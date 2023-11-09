@@ -1,0 +1,12 @@
+body {
+  font-family: sans-serif;
+}
+
+.clickable {
+  color: slategrey;
+  cursor: pointer;
+}
+
+.bold {
+  color: black;
+}

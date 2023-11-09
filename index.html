@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <html>
+      <head>
+        <title>Weather Project</title>
+        <meta charset="UTF-8" />
+        <link href="src/styles.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+        <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+          crossorigin="anonymous"
+        />
+      </head>
+
+      <body>
+        <div class="my-4">
+        <div class="card w-75 mx-auto">
+          <div class="card-header bg-primary">
+            <form id="searchCity">
+              <div class="row">
+                <div class="col-8">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Search for a city"
+                    aria-label="City"
+                    id="search-text-input"
+                  />
+                </div>
+                <div class="col-4">
+                  <input type="submit" placeholder="Search" class="btn btn-outline-light"/>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="card-body bg-primary-subtle">
+            <h1 id="cityText">Sydney NSW, Australia</h1>
+            <p class="fs-1 mb-0 fw-bold" id="time">00:00</p>
+            <p class="mb-0" id="date">DDD DD MMM YYYY</p>
+				    <p id="condition">Partly Cloudy</p>
+            <div class="row">
+              <div class="col">
+                <h1>⛅ <span id="temp">19</span>°C</h1>
+              </div>
+              <div class="col">
+                <p>
+                  Precipitation: <span id="precipitation">19</span>%
+                  <br />
+                  Humidity: <span id="humidity">19</span>%
+                  <br />
+                  Wind: <span id="wind">19</span>km/h
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <script src="src/index.js"></script>
+      </body>
+    </html>
+  </head>
+</html>
